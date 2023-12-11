@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliacion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a6079325a.js" crossorigin="anonymous"></script>
+    <link class="estilos" rel="stylesheet" href="/Css/style-1.css">
+</head>
+
+<body>
+    <div class="cssBtnContainer">
+        <div class="swapBtnMolec">
+            <button href="#" class="swapCss"></a><i class="fa-solid fa-arrows-rotate"></i></button>
+            <p id="nextStyleTxt" class="hidden">Next style</p>
+        </div>
+        <div class="randomBtnMolec">
+            <button href="#" class="randomCss"><i class="fa-solid fa-shuffle"></i></button>
+            <p id="randomStyleTxt" class="hidden">Random style</p>
+        </div>
+    </div>
+    <div class="titleFormContainer">
+        <div class="mainTitle">
+            <h1>Veni al gym 💪🏽 </h1>
+        </div>
+        <form>
+            <div class="fieldsets">
+                <fieldset>
+                    <legend> 🙋 Datos Personales 👀 </legend>
+                    <div class="personalData">
+                        <label for="name">Nombre:<sup>*</sup></label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="surname">Apellido:<sup>*</sup></label>
+                        <input type="text" id="surname" name="surname" required>
+                        <label for="dni">Documento:<sup>*</sup></label>
+                        <input type="tel" name="dni" id="dni" required>
+                        <label for="nationality">Nacionalidad:<sup>*</sup></label>
+                        <select name="nationality" id="nationality" required>
+                            <option value="">- Seleccionar -</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasileña">Uruguaya</option>
+                            <option value="Paraguay">Paraguaya</option>
+                            <option value="Uruguay">Uruguaya</option>
+                        </select>
+                        <label for="info">Contanos un poco de vos</label>
+                        <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                        <p>Sexo:<sup>*</sup></p>
+                        <div class="checkbox-gender">
+                            <input type="radio" id="fem" name="gender" value="fem">
+                            <label for="fem">Femenino</label>
+                            <input type="radio" id="masc" name="gender" value="masc">
+                            <label for="masc">Masculino</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Otro</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend> 📱 Datos de contacto 💌</legend>
+                    <div class="contactData">
+                        <label for="phone">Telefono:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Codigo de area y numero">
+                        <label for="email">Direccion de correo electronico:<sup>*</sup></label>
+                        <input type="email" name="email" id="email" placeholder="Ej: mail@gmail.com" required>
+                    </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend> 🚴 Actividades 🤸 </legend>
+                    <div class="activities">
+                        <p>Por favor, indica cuales actividades te interesa.</p>
+                        <p>Sede Palermo:</p>
+                        <div class="actOptions">
+                            <input type="checkbox" id="basketballPal" name="basketball" value="basketball">
+                            <label for="basketballPal">Basquet</label>
+                            <input type="checkbox" id="boxingPal" name="boxing" value="boxing">
+                            <label for="boxingPal">Boxeo</label>
+                            <input type="checkbox" id="footballPal" name="football" value="football">
+                            <label for="footballPal">Futbol</label>
+                            <input type="checkbox" id="tennisPal" name="tennis" value="tennis">
+                            <label for="tennisPal">Tenis</label>
+                        </div>
+                        <p>Sede Rosario:</p>
+                        <div class="actOptions">
+                            <input type="checkbox" id="basketballRos" name="basketball" value="basketball">
+                            <label for="basketballRos">Basquet</label>
+                            <input type="checkbox" id="footballRos" name="football" value="football">
+                            <label for="footballRos">Futbol</label>
+                            <input type="checkbox" id="rugbyRos" name="rugby" value="rugby">
+                            <label for="rugbyRos">Rugby</label>
+                            <input type="checkbox" id="voleyballRos" name="voleyball" value="voleyball">
+                            <label for="voleyballRos">Voley</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="conditions">
+                <div class="tyc">
+                    <input type="checkbox" name="tyc" id="tyc" required>
+                    <label for="tyc">Acepto las condiciones<sup>*</sup></label>
+                </div>
+                <div class="news">
+                    <input type="checkbox" name="news" id="news">
+                    <label for="news">Deseo recibir novedades</label>
+                </div>
+                <p><sup>*</sup>: campo obligatorio.</p>
+
+            </div>
+            <div class="buttons">
+                <button id="singIn">Iniciar afiliacion</button>
+                <button id="reset">Reestablecer</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

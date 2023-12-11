@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Exo2;
+    src: url(../Fonts/Exo2-Black.ttf);
+}
+
+@font-face {
+    font-family: PressStart;
+    src: url(../Fonts/PressStart2P-Regular.ttf);
+}
+
+body{
+    background-image: url(../Imgs/background.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 1rem 3rem;
+    font-family: "Exo2", sans-serif;
+}
+hr{
+    border: none;
+}
+
+h1{
+    border: 5px solid black;
+    border-radius: 9px/8px;
+    margin: 0 3rem 3rem 3rem;
+    padding: 1rem;
+    background-color: #fce8f3;
+    font-family: "PressStart", sans-serif;
+}
+
+.titleFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cssBtnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 100px;
+}
+.cssBtnContainer button{
+    background-color: #CF4F95;
+    box-shadow: none;
+    padding: 0.75rem;
+}
+
+fieldset{
+    padding: 1.75rem;
+    border: 5px solid black;
+    border-radius: 9px/8px;
+    position: relative;
+    margin: 5px 10px 40px 10px;
+}
+
+fieldset:nth-of-type(1){
+    background-color: #FCE7E0;
+    box-shadow: 9px 7px #CF4F95; 
+
+}
+
+fieldset:nth-of-type(1) legend{
+    align-items: center;
+    background-image: url(../Imgs/iconsone.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: 5px solid black;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    background-color: #CF4F95;
+    margin-inline-start: 0%;
+    height: 2rem;
+    width: 85%;
+    padding-left: 1rem;
+
+}
+
+fieldset:nth-of-type(2){
+    background-color: #DAD0FF;
+    box-shadow: -9px 9px #FFBD00; 
+}
+
+fieldset:nth-of-type(2) legend{
+    align-items: center;
+    display: flex;
+    background-color: #FFBD00;
+    background-image: url(../Imgs/icons2.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: 5px solid black;
+    position: absolute;
+    top: -30px;
+    right: -5px;
+    height: 2rem;
+    width: 65%;
+    padding-right: 35px;
+}
+
+fieldset:nth-of-type(3){
+    background-color: #FFC3E4;
+    box-shadow: 9px 9px #6BCEFF;
+}
+
+fieldset:nth-of-type(3) legend{
+  
+    align-items: center;
+    display: flex;
+    background-color: #6BCEFF;
+    background-image: url(../Imgs/icons3.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: 5px solid black;
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    height: 2rem;
+    width: 65%;
+    padding-left: 8px;
+}
+
+button{
+    font-family: "Exo2", sans-serif;
+    font-size: 16px;
+    background-color: #ffe8aa;
+    border: 5px solid black;
+    border-radius: 50px;
+    box-shadow: -5px 5px #FFBD00;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem;
+}
+
+.conditions{
+    background-color: #dad0ffd1;
+    border-radius: 9px;
+    padding: 0.5rem;
+}
+
+.personalData, .contactData{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+input, textarea, select{
+    height: 18px;
+    border: none;
+}
+label{
+    margin-bottom: 2px;
+}
+
+input[type=checkbox]:checked{
+    accent-color: #6BCEFF !important;
+}
+
+input[type=radio]:checked{
+    accent-color: #CF4F95 !important;
+}
+

@@ -1,0 +1,185 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1F2023;
+}
+h1{
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e2e1e1;
+    border-top: 20px solid #4D6D63;
+    border-bottom: 20px solid #4D6D63;
+    border-left: 10px solid #1F2023;
+    border-right: 10px solid #1F2023;
+    padding: 2% 10%;
+    text-align: center;
+}
+
+hr{
+    border-top: 10px dotted #A6C1B9;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 25px auto;
+    width: 40%;
+}
+
+fieldset{
+    background-color: #DCE4E2;
+    border: none;
+}
+
+fieldset:focus-within{
+    background-color: #A6C1B9 ;
+}
+textarea{
+    text-align: right;
+    resize: vertical;
+}
+textarea:focus{
+    color: #DCE4E2;
+    background-color: #4D6D63;
+    outline: none !important;
+    border: 2px solid #1F2023;
+    border-radius: 0.25rem;
+}
+
+label{
+    margin: 10px 2px;
+}
+
+select, option{
+    height: 25px;
+}
+
+input[type=text], input[type=tel],input[type=email]{
+  height: 20px;
+  text-align: right;
+}
+
+input[type=text]:focus, input[type=tel]:focus,input[type=email]:focus{
+    background-color: #4D6D63;
+    color: #DCE4E2;
+    outline: none !important;
+    border: 2px solid #1F2023;
+    border-radius: 0.25rem;
+}
+
+legend{
+    background-color: #4D6D63;
+    color: #DCE4E2;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin-left: 25px;
+    border-radius: 0.5rem;
+    padding: 2%;
+}
+
+.titleFormContainer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 500px;
+
+}
+
+.conditions{
+    color: #DCE4E2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.personalData, .contactData{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3% 10% 5% 10%;
+}
+
+.activities{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3% 10% 5% 1%;
+}
+
+.buttons, .checkbox-gender, .tyc, .news{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #2B3D37;
+    border: 1px solid #4D6D63;
+    border-radius: 0.5rem;
+    color: #A6C1B9;
+    margin: 1% 3%;
+    padding: 2%;    
+}
+
+button:hover{
+    background-color:#4D6D63 ;
+    border: 1px solid #2B3D37;
+    color: #2B3D37;
+}
+
+select:focus{
+    outline: none !important;
+    border: 2px solid #1F2023;
+    border-radius: 0.25rem;
+}
+
+.swapCss, .randomCss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4D6D63 ;
+    background-color: #e0e4e3;
+    border: 3px solid #4D6D63;
+    padding: 2%;
+    border-radius: 40%;
+    width: 28px;
+    height: 28px;
+    margin: 15px;
+    text-decoration: none;
+}
+.swapCss:focus, .randomCss:focus{
+    color: #e0e4e3;
+    background: #4D6D63;
+}
+
+.cssBtnContainer{
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.swapBtnMolec, .randomBtnMolec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 90px;
+}
+
+.swapBtnMolec p, .randomBtnMolec p{
+    margin-top: 1px;
+    color: #a1b0ad;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+#nextStyleTxt, #randomStyleTxt{
+    display: none;
+}

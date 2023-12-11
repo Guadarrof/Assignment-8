@@ -1,0 +1,187 @@
+@font-face {
+    font-family: MajorMono;
+    src: url(../Fonts/MajorMonoDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Michroma;
+    src: url(../Fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gruppo;
+    src: url(../Fonts/Gruppo-Regular.ttf);
+}
+
+
+body{
+    background-image:url(../Imgs/bkg4.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 189, 189);
+    font-family: Michroma, sans-serif;
+}
+
+.cssBtnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 100px;
+}
+
+.fieldsets{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+hr{
+    border: none;
+    display: none;
+}
+
+
+.mainTitle{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    height: 90vh;
+    width: 100vw;
+}
+
+h1{
+    color: rgb(200, 161, 44);
+    font-family: "MajorMono", sans-serif;
+    font-size: 4rem;
+}
+
+fieldset{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.732);
+    padding: 1rem;
+}
+
+legend{
+    font-family: Michroma, sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fdbb51;
+    background-color: #0b111c;
+    height: 30px;
+    padding: 0.25rem;
+}
+
+fieldset:nth-of-type(1){
+    width: 80vw;
+}
+fieldset:nth-of-type(2){
+    width: 40vw;
+}
+fieldset:nth-of-type(3){
+    width: 40vw;
+}
+
+.personalData, .contactData, .activities{
+    background-color: #ffcf8145;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 3% 10% 5% 10%;
+}
+
+input[type=text]:focus, input[type=tel]:focus,input[type=email]:focus{
+    background-color: #101010;
+    color: #DCE4E2;
+    outline: none !important;
+    border: 2px solid #FCA311;
+}
+
+select{
+    background-color: #0b111cd9;
+    border:none;
+    color: #DCE4E2;
+    height: 25px;
+    padding: 0 0 0 5px;
+}
+textarea{
+    background-color: #0b111cd9;
+    border:none;
+    color: #DCE4E2;
+    height: 100px;
+    padding: 0 0 0 5px;
+}
+
+select:focus{
+    outline: none !important;
+    border: 2px solid #FCA311;
+}
+
+label{
+    font-size: 12px;
+    margin: 8px;
+}
+
+p{
+    font-size: 12px;
+}
+
+input{
+    color: rgb(231, 228, 228);
+    border: none;
+    background-color: #0b111cd9;
+    padding: 0 0 0 5px;
+    height: 20px;
+}
+
+.actOptions{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0b111cd9;
+}
+
+.conditions p{
+    font-size: 10px;
+}
+
+input[type=checkbox]:checked{
+    accent-color: #FCA311 !important;
+}
+
+input[type=radio]:checked{
+    accent-color: #FCA311 !important;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    background-color: #0b111c;
+    color: #FCA311;
+    border: 3px solid #283a5d;
+    padding: 0.75rem;
+    margin: 1rem;
+}
+
+.cssBtnContainer button{
+    color: #FCA311;
+    background-color: #0b111c;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50px;
+    margin: 0.25rem 2rem 0 2rem ;
+}
+
+.cssBtnContainer{
+    margin: 0 2rem;
+}
+
+.conditions{
+    margin-left: 1rem;
+}
