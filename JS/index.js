@@ -47,31 +47,33 @@ function randomBtnLabel(){
 
 // Resetting forms
 
-resetBtn.addEventListener("click", resetForm);
+//No es necesario el input type=reset resetea solo!!
 
- function resetForm(){
-    for (let i = 0; i < inputs.length; i++) {
-        if(inputs[i].type==="text"){
-            inputs[i].value="";
-        }  
-        else if(inputs[i].type==="checkbox"){
-            inputs[i].checked=false;
-        }
-        else if(inputs[i].type==="tel"){
-            inputs[i].value="";
-        }
-        else if(inputs[i].type==="email"){
-            inputs[i].value="";
-        }
-        else{
-            inputs[i].checked=false;
-        }
-    }
-    for (let index = 0; index < textArea.length; index++) {
-        textArea[index].value="";        
-    }
-    nationalitySelect.value="none";
-}
+// resetBtn.addEventListener("click", resetForm);
+
+//  function resetForm(){
+//     for (let i = 0; i < inputs.length; i++) {
+//         if(inputs[i].type==="text"){
+//             inputs[i].value="";
+//         }  
+//         else if(inputs[i].type==="checkbox"){
+//             inputs[i].checked=false;
+//         }
+//         else if(inputs[i].type==="tel"){
+//             inputs[i].value="";
+//         }
+//         else if(inputs[i].type==="email"){
+//             inputs[i].value="";
+//         }
+//         else{
+//             inputs[i].checked=false;
+//         }
+//     }
+//     for (let index = 0; index < textArea.length; index++) {
+//         textArea[index].value="";        
+//     }
+//     nationalitySelect.value="none";
+// }
 
 // Swapping CSS
 
